@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family:'Overpass', sans-serif;
+    line-height: 1.5;
+
+}  
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+.img {
+    width: 100%;
+}
+
+.heading {
+    color: hsl(208, 49%, 24%)
+}
+
+.header {
+    background-image: url("src/assets/images/bg-pattern-intro-mobile.svg"),linear-gradient(hsl(13, 100%, 72%),  hsl(353, 100%, 62%));
+    background-position: 35%;
+    padding: 3rem 2rem;
+    height: 65vh;
+    border-bottom-left-radius: 7rem;
+    overflow: clip;
+}
+
+.header .img-bg {
+    width: 100%;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    transform: rotate(20deg);
+}
+
+.nav {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 5;
+}
+
+.dropdown-nav {
+    margin-top: 1rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    color: hsl(237, 17%, 21%);
+    z-index: 6;
+    border-radius: .5rem;
+    padding: 1.5rem 0;
+    font-weight: 500;
+}
+
+.dropdown {
+    width: 70%;
+    text-align: center;
+    border-bottom: 1px solid hsl(240, 2%, 79%);
+}
+
+.dropdown li {
+    width: 100%;
+    padding: .5rem 0;
+    margin-bottom: .7rem;
+}
+
+.dropdown-btns {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.dropdown-btn {
+    background: none;
+    border: none;
+    font: inherit;
+}
+
+.dropdown-btns .accent {
+    background: linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    color: #fff;
+    padding: .3rem .7rem;
+    border-radius: 1.5rem;
+}
+
+.arrow {
+    padding: .3rem .3rem 0 .3rem;
+}
+
+.dropdown-active {
+    background: rgba(200, 200, 203,.6);
+    border-radius: .5rem;
+    font-weight: 300;
+}
+
+.dropdown-active li {
+    margin: 0;
+    color: hsl(207, 13%, 34%);
+    padding: .4rem;
+}
+
+.text-content {
+    max-width: 85%;
+    margin: 25% auto;
+    text-align: center;
+    position: relative;
+    color: hsl(0, 0%, 100%);
+    z-index: 3;
+}
+
+.text-content h1 {
+    line-height: 1.3;
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.text-content p {
+    margin: .8rem 0;
+    font-weight: 200;
+}
+
+.header-btns {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-btns .btn {
+    font-family: inherit;
+    font-weight: 400;
+    padding: .6rem .7rem;
+    border-radius: 1.2rem;
+}
+
+.header-btns .default {
+    background: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 100%);
+    color: hsl(353, 100%, 62%);
+}
+
+
+.header-btns .inverted {
+    color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 100%);
+    background-color: hsl(353, 100%, 62%);
+}
+
+.section {
+    text-align: center;
+    margin: 2rem 1rem;
+}
+
+.section .img {
+    margin: 2.5rem 0;
+}
+
+.section .text {
+    font-weight: 300;
+    line-height: 1.6;
+    padding: 1rem 1.2rem;
+}
+
+
+.dark  {
+    width: 100%;
+    margin: 0;
+    height: 60vh;
+    padding-top: 40%;
+    border-top-right-radius: 7rem;
+    border-bottom-left-radius: 7rem;
+    background: linear-gradient( hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    background-size: 80%;
+    color: hsl(0, 0%, 100%);
+    overflow:clip;
+}
+
+.bg-pattern {
+    width: 100%;
+    position: relative;
+    top: -150%;
+    left: 0;
+
+}
+
+.offset {
+    margin-top: -13rem;
+    position: relative;
+    top: 11rem;
+    z-index: 9;
+}
+
+.dark h2 {
+    position: relative;
+    color: hsl(0, 0%, 100%);
+    z-index: 4;
+}
+
+
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 3rem 0;
+    width: 100%;
+    background:hsl(240, 10%, 16%);
+    color: #fff;
+    text-align: center;
+    z-index: 99;
+    border-top-right-radius: 7rem;
+}
+
+.footer-links {
+    margin-top: 2rem;
+    line-height: 1.7rem;
+    font-weight: 200;
+}
