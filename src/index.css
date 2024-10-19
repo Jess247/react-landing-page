@@ -139,10 +139,6 @@ li {
     padding: .4rem;
 }
 
-.dropdown-active li:hover {
-    transform: scale(1.05);
-    transition: transform .3s ease-in-out;
-}
 
 .text-content {
     max-width: 85%;

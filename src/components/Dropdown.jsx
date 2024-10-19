@@ -25,7 +25,10 @@ function Dropdown() {
         <nav class="dropdown-nav">
             <ul className="dropdown">
                 <li>Product 
-                <img className='arrow' src={arrow} onClick={() => handleDropdownClick('product')}/>
+                <img 
+                    className='arrow' 
+                    src={arrow} 
+                    onClick={() => handleDropdownClick('product')}/>
                 {isOpen === 'product' ? 
                 <AnimatePresence>
                     <motion.div

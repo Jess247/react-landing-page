@@ -12,7 +12,7 @@ function Header() {
                 <p>Grow your audience and build your online brand</p>
                 <div className='header-btns'>
                     <button className='btn default'>Start for free</button>
-                    <button className='btn inverted'>learn more</button>
+                    <button className='btn inverted'>Learn more</button>
                 </div>
             </div>
         </header>
