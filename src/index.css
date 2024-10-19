@@ -111,12 +111,12 @@ li {
 .dropdown-active {
     background: rgba(200, 200, 203,.6);
     border-radius: .5rem;
-    font-weight: 300;
+    font-size: .95rem;
 }
 
 .dropdown-active li {
     margin: 0;
-    color: hsl(207, 13%, 34%);
+    color: hsl(208, 49%, 24%);
     padding: .4rem;
 }
 
