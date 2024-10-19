@@ -17,6 +17,10 @@ a {
     color: inherit;
 }
 
+a:hover {
+    font-weight: 300;
+}
+
 li {
     list-style: none;
 }
@@ -55,6 +59,13 @@ li {
     z-index: 5;
 }
 
+.nav img {
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+}
+
+
+
 .dropdown-nav {
     margin-top: 1rem;
     position: absolute;
@@ -66,10 +77,11 @@ li {
     align-items: center;
     background: white;
     color: hsl(237, 17%, 21%);
-    z-index: 6;
+    z-index: 8;
     border-radius: .5rem;
     padding: 1.5rem 0;
     font-weight: 500;
+    box-shadow: 0px 0px 4px rgba(255, 143, 112,.5);
 }
 
 .dropdown {
@@ -82,6 +94,12 @@ li {
     width: 100%;
     padding: .5rem 0;
     margin-bottom: .7rem;
+}
+
+.dropdown li:hover {
+    transform: scale(1.05);
+    transition: transform .3s ease-in-out;
+    cursor: pointer;
 }
 
 .dropdown-btns {
@@ -98,9 +116,9 @@ li {
 }
 
 .dropdown-btns .accent {
-    background: linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background: linear-gradient(90deg,hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     color: #fff;
-    padding: .3rem .7rem;
+    padding: .5rem .9rem;
     border-radius: 1.5rem;
 }
 
@@ -109,15 +127,21 @@ li {
 }
 
 .dropdown-active {
-    background: rgba(200, 200, 203,.6);
+    background: rgba(200, 200, 203,.3);
     border-radius: .5rem;
     font-size: .95rem;
+    margin-top: 1rem;
 }
 
 .dropdown-active li {
     margin: 0;
     color: hsl(208, 49%, 24%);
     padding: .4rem;
+}
+
+.dropdown-active li:hover {
+    transform: scale(1.05);
+    transition: transform .3s ease-in-out;
 }
 
 .text-content {
